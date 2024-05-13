@@ -1,0 +1,369 @@
+/**
+ * Copyright @LAPCoder
+ *
+ * Licensed under the MIT License.
+ */
+ 
+body {
+    background:
+		linear-gradient(
+			315deg, 
+			rgb(91, 62, 255) 3%, 
+			rgb(109, 155, 255) 38%, 
+			rgba(48,238,226,1) 68%, 
+			rgb(118, 255, 207) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 1% 1%;
+    }
+}
+
+section.main {
+	overflow: hidden;
+	height: 100vh;
+}
+
+#cps-container {
+	background-color: #000a;
+	height: 20vh;
+	margin: 5vw;
+	padding: 1.5em;
+	overflow: hidden;
+	border: 5vmin solid;
+	border-image-slice: 1;
+	animation: 10s linear infinite rot;
+	border-image-source: repeating-conic-gradient(
+			from var(--rotate),
+			red 0%,
+			yellow 15%,
+			red 33%);
+
+	color: white;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	align-content: center;
+	text-align: center;
+	font-size: 5vh;
+}
+
+/*
+for i in range(0,100):
+    print(str(i)+"""% {
+    --rotate: """ + str(i*3.6) + """deg;
+}""")
+*/
+@keyframes rot {
+	0% {
+        --rotate: 0.0deg;
+	}
+	1% {
+		--rotate: 3.6deg;
+	}
+	2% {
+		--rotate: 7.2deg;
+	}
+	3% {
+		--rotate: 10.8deg;
+	}
+	4% {
+		--rotate: 14.4deg;
+	}
+	5% {
+		--rotate: 18.0deg;
+	}
+	6% {
+		--rotate: 21.6deg;
+	}
+	7% {
+		--rotate: 25.2deg;
+	}
+	8% {
+		--rotate: 28.8deg;
+	}
+	9% {
+		--rotate: 32.4deg;
+	}
+	10% {
+		--rotate: 36.0deg;
+	}
+	11% {
+		--rotate: 39.6deg;
+	}
+	12% {
+		--rotate: 43.2deg;
+	}
+	13% {
+		--rotate: 46.8deg;
+	}
+	14% {
+		--rotate: 50.4deg;
+	}
+	15% {
+		--rotate: 54.0deg;
+	}
+	16% {
+		--rotate: 57.6deg;
+	}
+	17% {
+		--rotate: 61.2deg;
+	}
+	18% {
+		--rotate: 64.8deg;
+	}
+	19% {
+		--rotate: 68.4deg;
+	}
+	20% {
+		--rotate: 72.0deg;
+	}
+	21% {
+		--rotate: 75.60000000000001deg;
+	}
+	22% {
+		--rotate: 79.2deg;
+	}
+	23% {
+		--rotate: 82.8deg;
+	}
+	24% {
+		--rotate: 86.4deg;
+	}
+	25% {
+		--rotate: 90.0deg;
+	}
+	26% {
+		--rotate: 93.60000000000001deg;
+	}
+	27% {
+		--rotate: 97.2deg;
+	}
+	28% {
+		--rotate: 100.8deg;
+	}
+	29% {
+		--rotate: 104.4deg;
+	}
+	30% {
+		--rotate: 108.0deg;
+	}
+	31% {
+		--rotate: 111.60000000000001deg;
+	}
+	32% {
+		--rotate: 115.2deg;
+	}
+	33% {
+		--rotate: 118.8deg;
+	}
+	34% {
+		--rotate: 122.4deg;
+	}
+	35% {
+		--rotate: 126.0deg;
+	}
+	36% {
+		--rotate: 129.6deg;
+	}
+	37% {
+		--rotate: 133.20000000000002deg;
+	}
+	38% {
+		--rotate: 136.8deg;
+	}
+	39% {
+		--rotate: 140.4deg;
+	}
+	40% {
+		--rotate: 144.0deg;
+	}
+	41% {
+		--rotate: 147.6deg;
+	}
+	42% {
+		--rotate: 151.20000000000002deg;
+	}
+	43% {
+		--rotate: 154.8deg;
+	}
+	44% {
+		--rotate: 158.4deg;
+	}
+	45% {
+		--rotate: 162.0deg;
+	}
+	46% {
+		--rotate: 165.6deg;
+	}
+	47% {
+		--rotate: 169.20000000000002deg;
+	}
+	48% {
+		--rotate: 172.8deg;
+	}
+	49% {
+		--rotate: 176.4deg;
+	}
+	50% {
+		--rotate: 180.0deg;
+	}
+	51% {
+		--rotate: 183.6deg;
+	}
+	52% {
+		--rotate: 187.20000000000002deg;
+	}
+	53% {
+		--rotate: 190.8deg;
+	}
+	54% {
+		--rotate: 194.4deg;
+	}
+	55% {
+		--rotate: 198.0deg;
+	}
+	56% {
+		--rotate: 201.6deg;
+	}
+	57% {
+		--rotate: 205.20000000000002deg;
+	}
+	58% {
+		--rotate: 208.8deg;
+	}
+	59% {
+		--rotate: 212.4deg;
+	}
+	60% {
+		--rotate: 216.0deg;
+	}
+	61% {
+		--rotate: 219.6deg;
+	}
+	62% {
+		--rotate: 223.20000000000002deg;
+	}
+	63% {
+		--rotate: 226.8deg;
+	}
+	64% {
+		--rotate: 230.4deg;
+	}
+	65% {
+		--rotate: 234.0deg;
+	}
+	66% {
+		--rotate: 237.6deg;
+	}
+	67% {
+		--rotate: 241.20000000000002deg;
+	}
+	68% {
+		--rotate: 244.8deg;
+	}
+	69% {
+		--rotate: 248.4deg;
+	}
+	70% {
+		--rotate: 252.0deg;
+	}
+	71% {
+		--rotate: 255.6deg;
+	}
+	72% {
+		--rotate: 259.2deg;
+	}
+	73% {
+		--rotate: 262.8deg;
+	}
+	74% {
+		--rotate: 266.40000000000003deg;
+	}
+	75% {
+		--rotate: 270.0deg;
+	}
+	76% {
+		--rotate: 273.6deg;
+	}
+	77% {
+		--rotate: 277.2deg;
+	}
+	78% {
+		--rotate: 280.8deg;
+	}
+	79% {
+		--rotate: 284.40000000000003deg;
+	}
+	80% {
+		--rotate: 288.0deg;
+	}
+	81% {
+		--rotate: 291.6deg;
+	}
+	82% {
+		--rotate: 295.2deg;
+	}
+	83% {
+		--rotate: 298.8deg;
+	}
+	84% {
+		--rotate: 302.40000000000003deg;
+	}
+	85% {
+		--rotate: 306.0deg;
+	}
+	86% {
+		--rotate: 309.6deg;
+	}
+	87% {
+		--rotate: 313.2deg;
+	}
+	88% {
+		--rotate: 316.8deg;
+	}
+	89% {
+		--rotate: 320.40000000000003deg;
+	}
+	90% {
+		--rotate: 324.0deg;
+	}
+	91% {
+		--rotate: 327.6deg;
+	}
+	92% {
+		--rotate: 331.2deg;
+	}
+	93% {
+		--rotate: 334.8deg;
+	}
+	94% {
+		--rotate: 338.4deg;
+	}
+	95% {
+		--rotate: 342.0deg;
+	}
+	96% {
+		--rotate: 345.6deg;
+	}
+	97% {
+		--rotate: 349.2deg;
+	}
+	98% {
+		--rotate: 352.8deg;
+	}
+	99% {
+		--rotate: 356.4deg;
+	}
+	100% {
+		--rotate: 0deg;
+	}
+}
