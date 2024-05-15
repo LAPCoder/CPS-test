@@ -4,8 +4,6 @@
  * Licensed under the MIT License.
  */
 
-content = document.getElementById("cps-container");
-
 var clics = 0;
 
 function animstart(tim)
@@ -16,7 +14,7 @@ function animstart(tim)
 
 function anim()
 {
-	content.innerHTML = Math.floor((clics*1000 / (Date.now() - time))*10)/10;
+	$("#cps-container div").html(Math.floor((clics*1000 / (Date.now() - time))*10)/10);
 	
 	requestAnimationFrame( anim );
 }

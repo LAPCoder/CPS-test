@@ -56,6 +56,17 @@ section.main {
 	font-size: 5vh;
 }
 
+.animationCircle {
+	background-color: rgba(8, 0, 255, 0.471);
+	height: 15vh;
+	width: 15vh;
+	z-index: 1;
+	margin: auto;
+	align-content: center;
+	text-align: center;
+	border-radius: 50%;
+}
+
 /*
 for i in range(0,100):
     print(str(i)+"""% {
@@ -127,7 +138,7 @@ for i in range(0,100):
 		--rotate: 72.0deg;
 	}
 	21% {
-		--rotate: 75.60000000000001deg;
+		--rotate: 75.6deg;
 	}
 	22% {
 		--rotate: 79.2deg;
@@ -142,7 +153,7 @@ for i in range(0,100):
 		--rotate: 90.0deg;
 	}
 	26% {
-		--rotate: 93.60000000000001deg;
+		--rotate: 93.6deg;
 	}
 	27% {
 		--rotate: 97.2deg;
@@ -157,7 +168,7 @@ for i in range(0,100):
 		--rotate: 108.0deg;
 	}
 	31% {
-		--rotate: 111.60000000000001deg;
+		--rotate: 111.6deg;
 	}
 	32% {
 		--rotate: 115.2deg;
@@ -175,7 +186,7 @@ for i in range(0,100):
 		--rotate: 129.6deg;
 	}
 	37% {
-		--rotate: 133.20000000000002deg;
+		--rotate: 133.2deg;
 	}
 	38% {
 		--rotate: 136.8deg;
@@ -190,7 +201,7 @@ for i in range(0,100):
 		--rotate: 147.6deg;
 	}
 	42% {
-		--rotate: 151.20000000000002deg;
+		--rotate: 151.2deg;
 	}
 	43% {
 		--rotate: 154.8deg;
@@ -205,7 +216,7 @@ for i in range(0,100):
 		--rotate: 165.6deg;
 	}
 	47% {
-		--rotate: 169.20000000000002deg;
+		--rotate: 169.2deg;
 	}
 	48% {
 		--rotate: 172.8deg;
@@ -220,7 +231,7 @@ for i in range(0,100):
 		--rotate: 183.6deg;
 	}
 	52% {
-		--rotate: 187.20000000000002deg;
+		--rotate: 187.2deg;
 	}
 	53% {
 		--rotate: 190.8deg;
@@ -235,7 +246,7 @@ for i in range(0,100):
 		--rotate: 201.6deg;
 	}
 	57% {
-		--rotate: 205.20000000000002deg;
+		--rotate: 205.2deg;
 	}
 	58% {
 		--rotate: 208.8deg;
@@ -250,7 +261,7 @@ for i in range(0,100):
 		--rotate: 219.6deg;
 	}
 	62% {
-		--rotate: 223.20000000000002deg;
+		--rotate: 223.2deg;
 	}
 	63% {
 		--rotate: 226.8deg;
@@ -265,7 +276,7 @@ for i in range(0,100):
 		--rotate: 237.6deg;
 	}
 	67% {
-		--rotate: 241.20000000000002deg;
+		--rotate: 241.2deg;
 	}
 	68% {
 		--rotate: 244.8deg;
@@ -286,7 +297,7 @@ for i in range(0,100):
 		--rotate: 262.8deg;
 	}
 	74% {
-		--rotate: 266.40000000000003deg;
+		--rotate: 266.4deg;
 	}
 	75% {
 		--rotate: 270.0deg;
@@ -301,7 +312,7 @@ for i in range(0,100):
 		--rotate: 280.8deg;
 	}
 	79% {
-		--rotate: 284.40000000000003deg;
+		--rotate: 284.4deg;
 	}
 	80% {
 		--rotate: 288.0deg;
@@ -316,7 +327,7 @@ for i in range(0,100):
 		--rotate: 298.8deg;
 	}
 	84% {
-		--rotate: 302.40000000000003deg;
+		--rotate: 302.4deg;
 	}
 	85% {
 		--rotate: 306.0deg;
@@ -331,7 +342,7 @@ for i in range(0,100):
 		--rotate: 316.8deg;
 	}
 	89% {
-		--rotate: 320.40000000000003deg;
+		--rotate: 320.4deg;
 	}
 	90% {
 		--rotate: 324.0deg;
